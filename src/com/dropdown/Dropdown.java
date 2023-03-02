@@ -16,6 +16,7 @@ public class Dropdown {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\yuvaraj\\eclipse-workspace\\Dropdown\\Driver\\chromedriver.exe");
 	    WebDriver driver=new ChromeDriver();
 	    driver.get("https://www.facebook.com/");
+	    Thread.sleep(2000);
 	    driver.manage().window().maximize();
 	    driver.findElement(By.xpath("//a[contains(text(),'Create New')]")).click();
 	    Thread.sleep(2000);
